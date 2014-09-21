@@ -1,5 +1,7 @@
+<h1>WELCOME TO JOOJ</h>
+
 Looking for information? here is it 
-<?={Echo "written by Adiya Bayansan"}?>;
+<em>"written by Adiya Bayansan"</em>
 
 *** Overview ***
 Jooj is for anyone who want to hear and learn what questions asked in job interviews. it's hot because everyone failing in most of times in job interviews.
@@ -16,11 +18,11 @@ type your question and select what type of part it's been asked from company.
 example, "how many balls fits in single bus?" asked from google and it's logical question.
 
 so type question text and type "google" tag in tag section and type comma "," it's will be seen as tagged. and then again type "logical" and dont forget to type comma.
-Drag submit button , that's all for submit.
+click submit button , that's all for submit.
 
 
 for search questions:
-there is appears tags that submitted in system, then choose tag and you will see question wich assigned choosen tag. and also you will see question with all tags assign in that particular question.
+there is appears tags that submitted in system, when you choose tag and you will see question wich assigned choosen tag. and also you will see question with all tags assign in that particular question.
 
 example, you search "logical" tag. and result will be shown in screen "how many balls fits in single bus?" with tags "logical" and also "google" because that google is tagged in that question. 
 
