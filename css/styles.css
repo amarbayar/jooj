@@ -1,0 +1,38 @@
+div#top{
+	background-color:#5ccaed;
+	margin-bottom:7%;
+	box-shadow: 3px 1px 3px rgba(0,0,0,0.1);
+}
+div#title{
+	color:#edf7f6;
+	
+}
+span#s1{
+	color:#a57257;
+}
+span#s2{
+	color:#39414e;
+}
+small#small{
+	color:#553624;
+}
+div#footer{
+	color:#a1cdc5;
+	font-weight: bold;
+	font-family: "Quicksand";
+	font-size: 20px;
+	margin-top:2%;
+	margin-bottom: 1%;
+	text-decoration: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+a.a{
+	color:#a1cdc5;
+}
+a.a:hover{
+	text-decoration: none;
+}
+img#footer{
+	width:12%;
+	height:12%;
+}
