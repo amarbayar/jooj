@@ -34,6 +34,7 @@ class q{
 
 			$rows = $api->click_tag($tag);
 			$rows_q = $api->get_question($tag);
+			$tags_counted = get_tags();
 
 			include("../view/question_view.html");
 
@@ -94,6 +95,6 @@ class q{
 			
 		}
 
-			/*
+			*/
 
 ?>

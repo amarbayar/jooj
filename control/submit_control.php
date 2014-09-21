@@ -60,5 +60,7 @@ function findTag($tag){
 	*/
 
 	insert_question($question, $tags);
+	
+
 	header("Location: ../index.php");
 ?>
