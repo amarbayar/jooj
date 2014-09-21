@@ -36,3 +36,10 @@ img#footer{
 	width:12%;
 	height:12%;
 }
+select#itype option{
+	color:white;
+	padding:2em;
+}
+option#t1{
+	height:50px;
+}
