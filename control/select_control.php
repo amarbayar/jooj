@@ -11,7 +11,6 @@ function select_tag($tag){
 		
 		require_once('connect.php');
 
-
 		if ($result = $con->query("SELECT * from qt inner join questions on qt_question=qid inner join tags on qt_tag=tid WHERE tag like '$tag%'")) {
 
 
@@ -26,7 +25,8 @@ function select_tag($tag){
   			$founded_question = $row['question'];
   			$founded_tag = $row['tag'];
 
-  			//include("view.html");
+  			//include("question_view.html");
+
 
 
 			}
