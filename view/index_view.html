@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Mantis</title>
+		<title>JooJ</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="css/bootstrap-tagsinput.css">
 	</head>
 	<body id="body">
-		
 		<div id="top">
 			<div class="container">
 				<div id="title">
@@ -18,22 +17,32 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<input id="question" class="form-control input-lg" type="text" placeholder="Please enter interview question here.." name="iquestion">
+		<form action="./control/submit_control.php" method="post">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<input id="question" class="form-control input-lg" type="text" placeholder="Please enter interview question here.." name="iquestion">
+					</div>
 				</div>
+				<div class="row"><br>
+					<div class="col-md-6">
+						<input id="tags" type="text" class="form-control input-lg" data-role="tagsinput" placeholder="Tags separated by comma" name="tags" value="">
+					</div>
+					<div class="col-md-2">
+						  <select class="form-control" name="select" value="select1">
+							  <option value="phone">Phone</option>
+							  <option value="skype">Skype</option>
+							  <option value="technical">Technical</option>
+							  <option value="onsite">Onsite</option>
+						  </select>
+					</div>
+					<div class="col-md-4">
+						<button type="submit" class="btn btn-block btn-primary" name="submit"/>Submit</button>
+					</div>
+				</div>	
 			</div>
-			<div class="row"><br>
-				<div class="col-md-6">
-					<input id="tags" type="text" class="form-control input-lg" data-role="tagsinput" placeholder="Tags separated by comma" >
-				</div>
-				<div class="col-md-4 col-md-offset-2">
-					<button type="submit" formaction="control/submit-question.php" class="btn btn-block btn-primary" />Submit</button>
-				</div>
-			</div>	
-		</div><br><br>
+		</form>
+		<br><br>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1">
@@ -89,6 +98,7 @@
 				</div>
 		    </div>
 		</nav>
+		<script src="./css/"></script>
 		<script src="css/jquery-2.1.1.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="css/bootstrap-tagsinput.js"></script>
