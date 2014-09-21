@@ -1,45 +1,56 @@
 <?php
 
-
+		include '../model/config.php';
 
 		//$tag = $_POST["tag"];
 
-		$tag = "google";
+class q{
+	
+	private $qtext;
+	var $qdate;
+	var $qtags = [];
 
-		select_tag($tag);
-function select_tag($tag){
-		
-		require_once('connect.php');
-
-		if ($result = $con->query("SELECT * from qt inner join questions on qt_question=qid inner join tags on qt_tag=tid WHERE tag like '$tag%'")) {
-
-
-    		while($row = mysqli_fetch_array($result)) {
-  			echo $row['qt_question'] . " " . $row['qt_tag'] . " " . $row['question'] . " " . $row['tag'];
-  			echo "<br>";
+	function __construct($q)
+    {
+        $this->$qtext = $q;
+    } 
 
 
-  			echo json_encode($row);
-  			echo "<br>";
+	function tag_add($tag){
+		array_push($this->$qtags,$tag);
+	}
 
-  			$founded_question = $row['question'];
-  			$founded_tag = $row['tag'];
-
-  			//include("question_view.html");
+}
 
 
+		$tag = "phone";
 
+		$row_array = [];
+
+
+			$rows = $api->click_tag($tag);
+			$rows_q = $api->get_question($tag);
+
+			foreach ($rows_q as $row_q) {
+				$temp = new q($row_q);
+				array_push($row_array, $temp);
 			}
 
-			
-    		$result->close();
+
+			if(isset($rows) && $rows->rowCount() > 0){
+				foreach($rows as $row){
+					//echo $row["tag"].":".$row["question"].":".$row["added"]."<br>";
+					echo $row["question"];
+					$question = $row["question"]; $date = $row["added"];
+					
+									
+				}
+			}
+			else{
+				print "not found";
+				return FALSE;
 		}
-		
 
-		$con->close();
 
-		
-
-	}
 
 ?>
