@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+	Originally written by Amarbayar. A 
+	For project: JOOJ, a crowd-sourced platform for job interview questions.
+-->
+<html>
+	<head>
+		<title>JooJ</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-tagsinput.css">
+	</head>
+	<body id="body">
+		<div id="top">
+			<div class="container">
+				<div id="title">
+					<img src="../images/Header_taller_1.jpg">
+				</div>
+			</div>
+		</div>
+		<form id="tag_submit" action="../control/select_control.php" method="post">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<p id="dquestion"><span id="question">Question:</span> <span id="question_body">Jooj is for anyone who want to hear and learn what questions asked in job interviews. it's hot because everyone failing in most of times in job interviews.
+						here is the right place to see what they are actually asking.</span>
+						</p>
+						<?php
+							$tags = array(
+									"Microsoft"=>"200",
+									"Google"=>"300",
+									"Amazon"=>"30",
+									"Algorithm"=>"99",
+									"Onsite"=>"12",
+									"Technical"=>"200",
+									"Logical"=>"300",
+									"Dsign Pattern"=>"30",
+									"Singleton"=>"99"
+										
+								);
+							foreach($tags as $tag => $count){
+						?>
+								<button id="distag" class="btn btn-xs" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="disbadge" class="badge"><?= $count ?> </span> </button>
+						<?php
+							}
+						?>
+					</div>
+					<div id="qdate" class="col-sm-2">
+						09/21/2014 5:15 a.m
+					</div>
+				</div>
+			</div><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<p id="dquestion"><span id="question">Question:</span>  <span id="question_body">type your question and select what type of part it's been asked from company.
+example, "how many balls fits in single bus?" asked from google and it's logical question.</span>
+						</p>
+						<?php
+							$tags = array(
+									"Microsoft"=>"200",
+									"Google"=>"300",
+									"Amazon"=>"30",
+								);
+							foreach($tags as $tag => $count){
+						?>
+								<button id="distag" class="btn btn-xs" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="disbadge" class="badge"><?= $count ?> </span> </button>
+						<?php
+							}
+						?>
+					</div>
+					<div id="qdate" class="col-sm-2">
+						09/21/2014 5:15 a.m
+					</div>
+				</div>
+			</div><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<p id="dquestion"><span id="question">Question:</span> <span id="question_body"> example, you search "logical" tag. and result will be shown in screen "how many balls fits in single bus?" with tags "logical" and also "google" because that google is tagged in that question. </span>
+						</p>
+						<?php
+							$tags = array(
+									"Microsoft"=>"200",
+									"Google"=>"300",										
+								);
+							foreach($tags as $tag => $count){
+						?>
+								<button id="distag" class="btn btn-xs" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="disbadge" class="badge"><?= $count ?> </span> </button>
+						<?php
+							}
+						?>
+					</div>
+					<div id="qdate" class="col-sm-2">
+						09/21/2014 5:15 a.m
+					</div>
+				</div>
+			</div>
+		</form>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+			<div id="footer" class="container">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1">
+						<p><a class="a" href="#"><img id="footer" src="../images\home.png" name="home" alt="home">&nbsp Home</a></p>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<p><a class="a" href="#"><img id="footer" src="../images\about.png" name="about" alt="about">&nbspAbout JooJ</a></p>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<p><a class="a" href="#"><img id="footer" src="../images\contact.png" name="contact" alt="contact">&nbspContact</a></p>
+					</div>
+				</div>
+		    </div>
+		</nav>
+		<script src="../css/jquery-2.1.1.js"></script>
+		<script src="../css/jooj.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="../css/bootstrap-tagsinput.js"></script>
+	</body>
+</html>

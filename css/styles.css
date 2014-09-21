@@ -21,8 +21,8 @@ div#footer{
 	font-weight: bold;
 	font-family: "Quicksand";
 	font-size: 20px;
-	margin-top:2%;
-	margin-bottom: 1%;
+	margin-top:10px;
+	margin-bottom: 5px;
 	text-decoration: none;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -33,8 +33,8 @@ a.a:hover{
 	text-decoration: none;
 }
 img#footer{
-	width:12%;
-	height:12%;
+	width:25px;
+	height:25px;
 }
 select#itype option{
 	color:white;
@@ -42,4 +42,47 @@ select#itype option{
 }
 option#t1{
 	height:50px;
+}
+a.tag:hover{
+	text-decoration: none;
+}
+button#tag{
+	background-color:#5ccaed;
+	border-radius: 25px;
+	padding-left:10px;
+	color:white;
+	margin-bottom: 4px;
+	overflow: visible;
+}
+span#badge{
+	background-color:#ECECEC;
+	color:#F62459;
+	font-size:10px;
+	float:right;
+}
+p#dquestion{
+	word-wrap:brak-word;
+}
+button#distag{
+	background-color:#5ccaed;	
+	border-radius:25px;
+	padding-left:10px;
+	color:white;
+	margin-bottom: 2px;
+}
+span#disbadge{
+	background-color:#ECECEC;
+	color:#F62459;
+}
+div#qdate{
+	background-color:#5ccaed;
+	color:white;
+	border-radius:25px;
+	vertical-align: center;
+}
+span#question{
+	font-weight: bold;
+}
+span#question_body{
+	font-style: italic;
 }
