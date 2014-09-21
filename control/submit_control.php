@@ -2,26 +2,26 @@
 
 require_once('connect.php');
 
-		//$tags = $_POST["tags"];
+		$tags = explode(",",$_POST["tags"]);
 		
-		//$question = $_POST["iquestion"];
+		$question = $_POST["iquestion"];
 
 
-		//$type = $_POST["itype"];
-		$type = "skype";
+		$type = $_POST["itype"];
+		//$type = "skype";
 		
-		$tags = array("google", "microsoft", "infosys", "logic");
+		//$tags = array("google", "microsoft", "infosys", "logic");
 		//$tags = array("micros");
 		array_push($tags,$type);
 		//var_dump($tags);
 
-		$question = "how much snow drops in Seatle";
+		//$question = "how much snow drops in Seatle";
 		mysqli_query($con,"INSERT INTO questions (question ) VALUES ('$question')");
 		$qid = $con->insert_id;
 		//echo $qid;
 
 		
-
+		
 		foreach ($tags as $tag) {
 
 			$tagExist = findTag($tag);
@@ -55,4 +55,6 @@ function findTag($tag){
 		else return 0;
 
 	};
+	
+	header("Location: ../index.php");
 ?>
