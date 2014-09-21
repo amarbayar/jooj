@@ -35,7 +35,7 @@ that's it. you are now in fish in pond. enjoy the water.
 - Project is created and influenced by mongolian guys from 2014-June COMPRO bach.
 
 ***Amarbayar Amarsanaa /Amour/ - Web design/html,css, javascript, jquery/ and idea maker
-***Amarbold Sodnomdorj /Big Amar/ - System analisys, DB handling /php, mysql/
+***Amarbold Sodnomdorj /Amara/ - System analisys, DB handling /php, mysql/
 ***Adiya Bayansan /frenzy/ - System controller /php/
 
 
