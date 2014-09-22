@@ -12,17 +12,17 @@ require_once('connect.php');
 		
 		//$tags = array("google", "microsoft", "infosys", "logic");
 		//$tags = array("micros");
-		array_push($tags,$type);
+	//	array_push($tags,$type);
 		//var_dump($tags);
 
 		//$question = "how much snow drops in Seatle";
-		mysqli_query($con,"INSERT INTO questions (question ) VALUES ('$question')");
-		$qid = $con->insert_id;
+	//	mysqli_query($con,"INSERT INTO questions (question ) VALUES ('$question')");
+	//	$qid = $con->insert_id;
 		//echo $qid;
 
 		
 		
-		foreach ($tags as $tag) {
+	/*	foreach ($tags as $tag) {
 
 			$tagExist = findTag($tag);
 			if ($tagExist>0) {
@@ -56,5 +56,11 @@ function findTag($tag){
 
 	};
 	
+
+	*/
+
+	insert_question($question, $tags);
+	
+
 	header("Location: ../index.php");
 ?>

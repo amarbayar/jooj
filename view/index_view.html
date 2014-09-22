@@ -1,102 +1,61 @@
-<!DOCTYPE html>
-<!--
-	Originally written by Amarbayar. A 
-	For project: JOOJ, a crowd-sourced platform for job interview questions.
--->
-<html>
-	<head>
-		<title>JooJ</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/bootstrap-tagsinput.css">
-	</head>
-	<body id="body">
-		<div id="top">
-			<div class="container">
-				<div id="title">
-					<img src="images/Header_taller_1.jpg">
-				</div>
+<form action="../control/submit_control.php" method="post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<input id="question" class="form-control input-lg" type="text" placeholder="Please enter interview question here.." name="iquestion">
 			</div>
 		</div>
-		<form action="./control/submit_control.php" method="post">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<input id="question" class="form-control input-lg" type="text" placeholder="Please enter interview question here.." name="iquestion">
-					</div>
-				</div>
-				<div class="row"><br>
-					<div class="col-md-6">
-						<input id="tags" type="text" class="form-control input-lg" data-role="tagsinput" placeholder="Tags separated by comma" name="tags" value="">
-					</div>
-					<div class="col-md-2">
-						  <select class="form-control" name="itype">
-							  <option value="phone">Phone</option>
-							  <option value="skype">Skype</option>
-							  <option value="technical">Technical</option>
-							  <option value="onsite">Onsite</option>
-						  </select>
-					</div>
-					<div class="col-md-4">
-						<button type="submit" class="btn btn-block btn-primary" name="submit"/>Submit</button>
-					</div>
-				</div>	
+		<div class="row"><br>
+			<div class="col-md-6">
+				<input id="tags" type="text" class="form-control input-lg" data-role="tagsinput" placeholder="Tags separated by comma" name="tags" value="">
 			</div>
-		</form>
-		<br><br>
-		<form id="tag_submit" action="control/select_control.php" method="post">
-			<div class="container">
-			<?php
-				$tags = array(
-						"Microsoft"=>"200",
-						"Google"=>"300",
-						"Amazon"=>"30",
-						"Algorithm"=>"99",
-						"Onsite"=>"12",
-						"Technical"=>"200",
-						"Logical"=>"300",
-						"Dsign Pattern"=>"30",
-						"Singleton"=>"99",
-						"Problem"=>"12",
-						"Arithmetic"=>"200",
-						"Technologies"=>"300",
-						"RESTful"=>"30",
-						".NET"=>"99",
-						"Final Keyword"=>"12",
-						"Java"=>"200",
-						"JDBC"=>"300",
-						"Spring"=>"30",
-						"Hibernate"=>"99",
-						"MVC"=>"12"
-							
-					);
-				foreach($tags as $tag => $count){
-			?>
-								<button id="tag" class="btn" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="badge" class="badge"><?= $count ?> </span> </button>
-			<?php
-				}
-			?>
+			<div class="col-md-2">
+				  <select class="form-control" name="itype">
+					  <option value="phone">Phone</option>
+					  <option value="skype">Skype</option>
+					  <option value="technical">Technical</option>
+					  <option value="onsite">Onsite</option>
+				  </select>
 			</div>
-		</form>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-			<div id="footer" class="container">
-				<div class="row">
-					<div class="col-md-3 col-md-offset-1">
-						<p><a class="a" href="#"><img id="footer" src="images\home.png" name="home" alt="home">&nbsp Home</a></p>
-					</div>
-					<div class="col-md-3 col-md-offset-1">
-						<p><a class="a" href="#"><img id="footer" src="images\about.png" name="about" alt="about">&nbspAbout JooJ</a></p>
-					</div>
-					<div class="col-md-3 col-md-offset-1">
-						<p><a class="a" href="#"><img id="footer" src="images\contact.png" name="contact" alt="contact">&nbspContact</a></p>
-					</div>
-				</div>
-		    </div>
-		</nav>
-		<script src="css/jquery-2.1.1.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="css/bootstrap-tagsinput.js"></script>
-	</body>
-</html>
+			<div class="col-md-4">
+				<button type="submit" class="btn btn-block btn-primary" name="submit"/>Submit</button>
+			</div>
+		</div>	
+	</div>
+</form>
+<br><br>
+<form id="tag_submit" action="../control/select_control.php" method="post">
+	<div class="container">
+	<?php
+		$tags = array(
+				"Microsoft"=>"200",
+				"Google"=>"300",
+				"Amazon"=>"30",
+				"Algorithm"=>"99",
+				"Onsite"=>"12",
+				"Technical"=>"200",
+				"Logical"=>"300",
+				"Dsign Pattern"=>"30",
+				"Singleton"=>"99",
+				"Problem"=>"12",
+				"Arithmetic"=>"200",
+				"Technologies"=>"300",
+				"RESTful"=>"30",
+				".NET"=>"99",
+				"Final Keyword"=>"12",
+				"Java"=>"200",
+				"JDBC"=>"300",
+				"Spring"=>"30",
+				"Hibernate"=>"99",
+				"MVC"=>"12",
+				"Phone"=>"100"
+					
+			);
+		foreach($tags as $tag => $count){
+	?>
+						<button id="tag" class="btn" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="badge" class="badge"><?= $count ?> </span> </button>
+	<?php
+		}
+	?>
+	</div>
+</form>
