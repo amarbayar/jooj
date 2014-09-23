@@ -27,33 +27,9 @@
 <form id="tag_submit" action="../control/select_control.php" method="post">
 	<div class="container">
 	<?php
-		$tags = array(
-				"Microsoft"=>"200",
-				"Google"=>"300",
-				"Amazon"=>"30",
-				"Algorithm"=>"99",
-				"Onsite"=>"12",
-				"Technical"=>"200",
-				"Logical"=>"300",
-				"Dsign Pattern"=>"30",
-				"Singleton"=>"99",
-				"Problem"=>"12",
-				"Arithmetic"=>"200",
-				"Technologies"=>"300",
-				"RESTful"=>"30",
-				".NET"=>"99",
-				"Final Keyword"=>"12",
-				"Java"=>"200",
-				"JDBC"=>"300",
-				"Spring"=>"30",
-				"Hibernate"=>"99",
-				"MVC"=>"12",
-				"Phone"=>"100"
-					
-			);
-		foreach($tags as $tag => $count){
+		foreach($tags_counted as $tags_c){
 	?>
-						<button id="tag" class="btn" name="tag" value="<?=$tag?>"><?= $tag?>&nbsp<span id="badge" class="badge"><?= $count ?> </span> </button>
+						<button id="tag" class="btn" name="tag" value="<?=$tags_c[0]?>"><?= $tags_c[0]?>&nbsp<span id="badge" class="badge"><?= $tags_c[1] ?> </span> </button>
 	<?php
 		}
 	?>
