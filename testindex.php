@@ -24,5 +24,5 @@ include '/model/config.php';
 				return FALSE;
 	}
 
-	//$api->insert_question("TEST question",["tag1","tag2"]);
+	$api->insert_question("TEST question","");
 ?>
