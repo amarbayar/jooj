@@ -32,6 +32,7 @@
 						<?= $v_date?>
 					</div>
 				</div>
+				<br>
 	<?php
 				$v_question = $row["question"];
 				$v_date = $row["added"];
@@ -43,11 +44,12 @@
 			}
 			else{
 				$v_tags = $v_tags . "," . $row["tag"];
-			}	
+			}
+
 		}
 		if($v_question != ""){
 			#Means we need to print the last question here. 
-				?>
+	?>
 			<div class="row">
 				<div class="col-sm-10">
 					<p id="dquestion"><span id="question">Question:</span> <span id="question_body"><?=$v_question?></span></p>
