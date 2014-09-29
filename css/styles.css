@@ -1,6 +1,5 @@
 div#top{
-	background-color:#5ccaed;
-	margin-bottom:7%;
+	background-color:#69cbe4;
 	box-shadow: 3px 1px 3px rgba(0,0,0,0.1);
 }
 div#title{
@@ -47,7 +46,7 @@ a.tag:hover{
 	text-decoration: none;
 }
 button#tag{
-	background-color:#5ccaed;
+	background-color:#69cbe4;
 	border-radius: 25px;
 	padding-left:10px;
 	color:white;
@@ -63,20 +62,22 @@ span#badge{
 p#dquestion{
 	word-wrap:brak-word;
 }
-button#distag{
-	background-color:#5ccaed;	
+button.distag{
+	background-color:#69cbe4;	
 	border-radius:25px;
 	padding-left:10px;
 	color:white;
 	margin-bottom: 2px;
+	position: relative;
+	left:70px;
 }
 span#disbadge{
 	background-color:#ECECEC;
 	color:#F62459;
 }
 div#qdate{
-	background-color:#5ccaed;
-	color:white;
+	background-color:#fff;
+	color:#3c3c3c;
 	border-radius:25px;
 	vertical-align: center;
 }
@@ -85,4 +86,10 @@ span#question{
 }
 span#question_body{
 	font-style: italic;
+}
+form#form{
+	margin-top:7%;
+}
+form#tag_submit{
+	margin-top:2%;
 }
