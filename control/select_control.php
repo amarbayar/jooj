@@ -1,5 +1,5 @@
 <?php
-	include("../model/config.php");
+	include("../model/database.php");
 	$tag = $_POST["tag"];
 	$rows = $api->click_tag($tag);
 	$rows_q = $api->get_question($tag);

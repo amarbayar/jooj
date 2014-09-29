@@ -1,5 +1,5 @@
 <?php
-require_once('../model/config.php');
+require_once('../model/database.php');
 	$tags = explode(",",$_POST["tags"]);		
 	$question = $_POST["iquestion"];
 	$type = $_POST["itype"];
