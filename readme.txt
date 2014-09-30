@@ -32,9 +32,11 @@ that's it. you are now in fish in pond. enjoy the water.
 
 *** Project credit ***
 
-- Project is created and influenced by mongolian guys from 2014-June COMPRO bach.
+- Project is created and influenced by mongolian guys from 2014-June COMPRO batch.
 
-***Amarbayar Amarsanaa /Amour/ - Web design/html,css, javascript, jquery/ and idea maker
+
+We worked in project using MVC architecture. 
+***Amarbayar Amarsanaa /Amour/ - Web design/html,css, javascript, jquery/, marketing, advertising 
 ***Amarbold Sodnomdorj /Amara/ - System analisys, DB handling /php, mysql/
 ***Adiya Bayansan /frenzy/ - System controller /php/
 
