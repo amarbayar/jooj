@@ -93,3 +93,10 @@ form#form{
 form#tag_submit{
 	margin-top:2%;
 }
+video{
+	margin-left: 15%;
+}
+a#skip_intro{
+	margin-left: 15%;
+	background-color: #69cbe4; 
+}
