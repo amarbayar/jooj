@@ -120,6 +120,7 @@ class API{
 	public function check_insert_tag($tag)
 	{
 		global $db;
+		$tag = trim($tag);
 
 		$sql = "SELECT tid FROM jo_tags WHERE tag = " . $db->quote($tag);
 		$rows = $db->query($sql);
