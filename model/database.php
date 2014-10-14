@@ -1,6 +1,10 @@
 <?php
 require_once("dbconfig.php");
-if (stristr(htmlentities($_SERVER['PHP_SELF']), "config.php")) {
+if (stristr(htmlentities($_SERVER['PHP_SELF']), "database.php")) {
+	   Header("Location: ../index.php");
+    die();
+}
+if (stristr(htmlentities($_SERVER['PHP_SELF']), "dbconfig.php")) {
 	   Header("Location: ../index.php");
     die();
 }
